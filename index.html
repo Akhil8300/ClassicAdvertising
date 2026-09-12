@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Business | Connect With Us</title>
+    <meta name="description" content="Connect with us on social media and explore our services.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.15), transparent 35%),
+                #080b12;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 35px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 560px;
+            text-align: center;
+        }
+
+        /* Profile */
+        .profile {
+            margin-bottom: 25px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: contain;
+            border: 3px solid rgba(255,255,255,0.9);
+            padding: 3px;
+            background: #ffffff;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+            margin-bottom: 15px;
+        }
+
+        .profile h1 {
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .verified {
+            color: #38bdf8;
+            font-size: 18px;
+            margin-left: 4px;
+        }
+
+        .profile p {
+            margin: 10px auto 0;
+            color: #aeb7c7;
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 430px;
+        }
+
+        /* Main CTA */
+        .cta {
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #2563eb, #0ea5e9);
+            color: white;
+            padding: 17px 20px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 22px;
+            box-shadow: 0 12px 30px rgba(37,99,235,0.25);
+            transition: all 0.25s ease;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 35px rgba(37,99,235,0.4);
+        }
+
+        .cta i {
+            margin-right: 8px;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+        .link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ffffff;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.09);
+            backdrop-filter: blur(12px);
+            padding: 16px 20px;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .link:hover {
+            transform: translateY(-3px);
+            background: rgba(255,255,255,0.12);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .link i {
+            width: 28px;
+            font-size: 21px;
+            margin-right: 13px;
+        }
+
+        .link span {
+            flex: 1;
+            text-align: center;
+            margin-right: 28px;
+        }
+
+        .arrow {
+            position: absolute;
+            right: 18px;
+            color: #8d98aa;
+            font-size: 13px;
+        }
+
+        /* Social icons */
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 27px 0;
+        }
+
+        .social {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #ffffff;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.25s ease;
+        }
+
+        .social:hover {
+            transform: translateY(-4px);
+            background: #ffffff;
+            color: #111827;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 28px;
+            color: #6f7a8c;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        footer a {
+            color: #8da2c2;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            body {
+                padding: 25px 14px;
+            }
+
+            .profile h1 {
+                font-size: 24px;
+            }
+
+            .logo {
+                width: 92px;
+                height: 92px;
+            }
+
+            .link {
+                padding: 15px 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PROFILE -->
+    <section class="profile">
+
+        <!-- Replace logo.jpg with your logo -->
+        <img src="logo.png"
+             alt="Your Business Logo"
+             class="logo">
+
+        <h1>
+            Classic Advertising
+            <i class="fa-solid fa-circle-check verified"></i>
+        </h1>
+
+        <p>
+            Advertising • Printing • Signage • Branding
+            <br>
+            Follow us and explore our latest work.
+        </p>
+
+    </section>
+
+
+    <!-- WHATSAPP CTA -->
+    <!-- Replace the number below with your WhatsApp number -->
+    <a class="cta"
+       href="https://wa.me/971557564988"
+       target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        Chat With Us on WhatsApp
+    </a>
+
+
+    <!-- LINKS -->
+    <div class="links">
+
+        <!-- Instagram -->
+        <a class="link"
+           href="https://instagram.com/classicadvertg016"
+           target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a class="link"
+           href="https://facebook.com/profile.php?id=61590968902091"
+           target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <!-- TikTok -->
+        <a class="link"
+           href="https://tiktok.com/@classicadvertising"
+           target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+            <span>TikTok</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a class="link"
+           href="https://youtube.com/@ADVERTISINGINDUBAI"
+           target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <!-- Website -->
+        <a class="link"
+           href="https://www.advertisingindubai.com"
+           target="_blank">
+            <i class="fa-solid fa-globe"></i>
+            <span>Visit Our Website</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <!-- Location -->
+        <a class="link"
+           href="https://maps.app.goo.gl/JK3CArq65rwW28fU6"
+           target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Our Location</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <!-- Email -->
+        <a class="link"
+           href="mailto:info@advertisingindubai.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email Us</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+    </div>
+
+
+    <!-- SOCIAL ICONS -->
+    <div class="socials">
+
+        <a class="social"
+           href="https://instagram.com/classicadvertg016"
+           target="_blank"
+           aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a class="social"
+           href="https://facebook.com/profile.php?id=61590968902091"
+           target="_blank"
+           aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a class="social"
+           href="https://tiktok.com/@classicadvertising"
+           target="_blank"
+           aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a class="social"
+           href="https://youtube.com/@ADVERTISINGINDUBAI"
+           target="_blank"
+           aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a class="social"
+           href="https://wa.me/971557564988"
+           target="_blank"
+           aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Classic Advertising. All Rights Reserved.
+        <br>
+        Dubai, United Arab Emirates
+    </footer>
+
+</div>
+
+</body>
+</html>
